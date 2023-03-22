@@ -1,5 +1,5 @@
 #!/bin/sh
-# This is a script install xray with customized script automatically
+# This is a script install xray & serve automatically
 arch=`dpkg --print-architecture`
 apt install -y unzip && \
 mkdir -p ~/xray && \
@@ -13,6 +13,10 @@ curl "https://gist.githubusercontent.com/wuuconix/30fbdc72c96e5fe1e32547baf7f1d7
 chmod +x start.sh && \
 mkdir result && \
 ./xray && \
-echo -e "\033[32mCongratulations! Install and Configure Done. \033[0m"
-echo -e "\033[32mcd ~/xray \033[0m"
+curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+apt install -y nodejs && \
+node -v && \
+npm i -g serve && \
+echo -e "\033[32mCongratulations! Install and Configure Done. \033[0m" && \
+echo -e "\033[32mcd ~/xray \033[0m" && \
 echo -e "\033[32m./start.sh https://github.com/wuuconix/shell \033[0m"
