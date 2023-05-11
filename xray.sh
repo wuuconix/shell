@@ -4,7 +4,7 @@ arch=`dpkg --print-architecture`
 apt install -y unzip && \
 mkdir -p ~/xray && \
 cd ~/xray && \
-curl -OL https://github.com/chaitin/xray/releases/download/1.9.8/xray_linux_$arch.zip && \
+curl -OL https://github.com/chaitin/xray/releases/download/1.9.9/xray_linux_$arch.zip && \
 unzip xray_linux_$arch.zip && \
 rm xray_linux_$arch.zip && \
 chmod +x ./xray_linux_$arch && \
