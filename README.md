@@ -23,3 +23,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/wuuconix/shell/main/zsh.sh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/wuuconix/shell/main/xray.sh)"
 ```
+
+**vscode-server.sh**
+
+> Install latest vscode-server in a server
+>
+> Useful in some company intranet situations
+>
+> Just set proxy and run this script
+>
+> And you can remote ssh to this machine in your vscode~
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/wuuconix/shell/main/vscode-server.sh)"
+```
